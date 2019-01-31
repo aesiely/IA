@@ -47,7 +47,6 @@ body {
 /* Style the tab */
 .tab {
     float: left;
-    border: 1px;
     background-color: none;
     width: 30%;
     height: 300px;
