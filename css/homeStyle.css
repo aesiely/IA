@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background-color: lightsteelblue; /*color of the whole page*/
+  /*box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 1); /*gives the bigger box of the whole page round corners*/ 
+  border-radius: 12px 12px 0px 0px; /*gives the bigger box of the whole page round corners*/ */
+}
+
+/* Header/IA logo*/
+.header {
+  padding: 0px; /*space between IA logo and borders*/
+  text-align: center;
+  /*background: white;*/
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  padding-left: 380px; /*centering the nav buttons*/
+    
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-left: 50px; /*space between navigation buttons*/
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+    
+}
+
+/*spotlight pic*/
+.spotlightpic {
+    float: right;
+    width: 340px;
+}
+
+/* Fake image */
+.fakeimg {
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  padding: 20px;
+  margin-top: 20px;
+  background-color: ghostwhite; /*color of the cards*/
+    border-collapse: collapse;
+  /*box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 1); /*gives each card of the whole page round corners*/
+  /*border-radius: 12px 12px 0px 0px; /*gives each card of the whole page round corners*/
+}
+
+/*center the welcome heading*/
+.card h1 {
+    padding-left: 100px;
+}
+
+/*center the title of the cards*/
+.card h2{
+    padding-left: 300px;
+    font-style: italic;
+}
+
+/*spotlight card with clearfix to have the pic and passage side by side*/
+.spotlightcard::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*center the title of the spotlight card*/
+.spotlightcard h2{
+    padding-left: 250px;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  /*background-color: #f1f1f1;*/
+  padding-left: 20px;
+}
+
+/*social media icons*/
+.fa {
+  padding: 15px;
+  font-size: 30px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 22px 2px;
+  border-radius: 50%;
+}
+
+/*color of social media icons when u hover*/
+.fa:hover {
+    opacity: 0.7;
+}
+
+/*centering social  media icons*/
+.socialmediaicons{
+    padding-left: 70px;
+}
+
+/*facebook colors*/
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/*Linkedin colors*/
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+/*google mailing list*/
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  /*text-align: center;*/
+  padding: 2px;
+  background-color: #333;
+  margin-top: 20px;
+}
+
+/*footer font size and color*/
+.footercontent {
+  color: white;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
